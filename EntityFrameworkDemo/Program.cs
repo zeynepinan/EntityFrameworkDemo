@@ -7,17 +7,17 @@ namespace EntityFrameworkDemo
     {
         static void Main(string[] args)
         {
-            //GetAll();
-            GetProductsByCategory(1);
+            GetAll();
+            //GetProductsByCategory(1);
         }
 
         private static void GetAll()
         {
             NorthwindContext northwindContext = new NorthwindContext();
 
-            foreach (var product in northwindContext.Products)
+            foreach (var product in northwindContext.Personels)
             {
-                Console.WriteLine(product.ProductName);
+                Console.WriteLine(product.Name);
             }
         }
 
